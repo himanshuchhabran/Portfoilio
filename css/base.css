@@ -1,0 +1,5 @@
+/* Base typography — fonts loaded via <link> in <head> */
+body{font-family:var(--font-primary);background:var(--bg-cream);color:var(--dark);line-height:1.5;-webkit-font-smoothing:antialiased;padding:0}
+h1,h2,h3,h4{font-family:var(--font-accent);color:var(--dark);font-weight:700}
+p{color:var(--grey)}
+.container{max-width:1100px;margin:0 auto;padding:var(--space-lg)}

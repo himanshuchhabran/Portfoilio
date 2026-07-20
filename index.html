@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Himanshu Chhabra — Full Stack Developer. Portfolio showcasing projects, skills, and contact details.">
+  <meta name="theme-color" content="#4AABCA">
+  <title>Himanshu Chhabra — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo" data-text="HC">Himanshu Chhabra</div>
+      <nav class="nav-links" role="navigation" aria-label="Main Navigation">
+        <a class="nav-link" href="#hero">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-gold" href="#contact">Get In Touch</a>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+
+    <!-- header ends; hero section placed in main -->
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero section">
+      <!-- Animated background particles -->
+      <div class="particles" aria-hidden="true"></div>
+      
+      <div class="hero-left fade-left">
+        <span class="eyebrow pulse">CREATIVE DEVELOPER</span>
+        <h1 class="hero-headline">
+          <span class="word-reveal">Crafting</span>
+          <span class="word-reveal">digital</span>
+          <span class="word-reveal">experiences</span>
+          <span class="word-reveal">for</span>
+          <span class="accent accent-blue word-reveal">mind</span>
+          <span class="word-reveal">and</span>
+          <span class="accent accent-gold word-reveal">body</span>
+        </h1>
+        <p class="hero-sub typing-effect">I build performant, scalable full-stack web applications and AI-powered SaaS solutions. I focus on clean architecture, delightful UI, and robust backend integrations.</p>
+        <div class="hero-actions" style="margin-top:28px">
+          <a class="btn btn-primary btn-hover-shine" href="#projects">
+            <span>View Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:6px"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a class="btn btn-outline btn-hover-lift" href="resume.html" target="_blank">
+            <span>Download CV</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:6px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+        <!-- Hero stats -->
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <div class="hero-stat-value" data-target="2">0</div>
+            <div class="hero-stat-label">Years Exp.</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-value" data-target="15">0</div>
+            <div class="hero-stat-label">Projects</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-value" data-target="100">0</div>
+            <div class="hero-stat-label">% Passion</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right scale-in">
+        <div class="hero-visual card">
+          <div class="decor-orb glow-pulse"></div>
+          <div class="floating-star">⭐</div>
+          <div class="code-window">
+            <div class="code-header">
+              <span class="code-dot"></span>
+              <span class="code-dot"></span>
+              <span class="code-dot"></span>
+            </div>
+            <div class="code-content">
+              <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</div>
+              <div class="code-line">  <span class="code-prop">name</span>: <span class="code-string">'Himanshu Chhabra'</span>,</div>
+              <div class="code-line">  <span class="code-prop">skills</span>: [<span class="code-string">'React'</span>, <span class="code-string">'Node.js'</span>, <span class="code-string">'Python'</span>],</div>
+              <div class="code-line">  <span class="code-prop">focus</span>: <span class="code-string">'AI/LLM SaaS'</span></div>
+              <div class="code-line">};</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section section">
+      <div class="section-header reveal">
+        <span class="eyebrow">ABOUT ME</span>
+        <h2 class="section-title">Turning Ideas Into Reality</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <!-- Top grid: photo + content side-by-side -->
+      <div class="about-grid">
+        <div class="about-photo-wrap reveal">
+          <div class="photo-frame">
+            <div class="about-photo placeholder" style="background: url('https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80') center/cover">
+              <!-- photo placeholder -->
+            </div>
+            <div class="photo-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span>Available for work</span>
+            </div>
+          </div>
+          <div class="decor-orb glow-pulse" style="left:-40px;top:auto;bottom:-40px;background:var(--blue);width:200px;height:200px"></div>
+        </div>
+        <div class="about-content reveal">
+          <p class="about-lead">I am a Full Stack Developer with experience building scalable web applications using React, Node.js, PostgreSQL, and AI/LLM integrations. I thrive on developing reliable end-to-end software and AI-powered SaaS solutions.</p>
+          
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🚀</div>
+              <div class="highlight-content">
+                <h4>AI Integration</h4>
+                <p>Building configurable AI agents and LLM-powered features</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🎨</div>
+              <div class="highlight-content">
+                <h4>Design-Driven</h4>
+                <p>Creating beautiful, intuitive user experiences</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🔧</div>
+              <div class="highlight-content">
+                <h4>Full Stack Mastery</h4>
+                <p>From database to deployment, I handle it all</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-row stagger">
+            <div class="stat-item">
+              <div class="stat-circle">
+                <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" class="stat-bg"/><circle cx="50" cy="50" r="45" class="stat-fill" style="--percent:85"/></svg>
+                <div class="stat-number" data-target="2">0</div>
+              </div>
+              <div class="stat-label">Years Exp.</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-circle">
+                <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" class="stat-bg"/><circle cx="50" cy="50" r="45" class="stat-fill" style="--percent:95"/></svg>
+                <div class="stat-number" data-target="15">0</div>
+              </div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-circle">
+                <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" class="stat-bg"/><circle cx="50" cy="50" r="45" class="stat-fill" style="--percent:100"/></svg>
+                <div class="stat-number" data-target="100">0</div>
+              </div>
+              <div class="stat-label">% Passion</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bottom full-width skills & certifications -->
+      <div class="skills-certs-fullwidth reveal">
+        <div class="skills-certs-grid">
+          <!-- Certifications & Achievements -->
+          <div class="certifications-section">
+            <h3 class="cert-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color:var(--blue);vertical-align:middle;margin-right:8px">
+                <path d="M12 15c1.66 0 3-1.34 3-3V6c0-1.66-1.34-3-3-3S9 4.34 9 6v6c0 1.66 1.34 3 3 3z"/>
+                <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+              </svg>
+              Achievements
+            </h3>
+            <div class="cert-list">
+              <div class="cert-item">
+                <div class="cert-icon">🏆</div>
+                <div class="cert-content">
+                  <strong>B.Sc. Computer Science</strong>
+                  <span>BML Munjal University</span>
+                </div>
+              </div>
+              <div class="cert-item">
+                <div class="cert-icon">📜</div>
+                <div class="cert-content">
+                  <strong>React.js Developer</strong>
+                  <span>Internship</span>
+                </div>
+              </div>
+              <div class="cert-item">
+                <div class="cert-icon">⭐</div>
+                <div class="cert-content">
+                  <strong>Full Stack</strong>
+                  <span>Experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech Stack -->
+          <div class="skills-section">
+            <div class="skills-header">
+              <div class="skills-header-content">
+                <h3 class="skills-title">Tech Stack & Tools</h3>
+                <p class="skills-description">Technologies I work with daily to build scalable, modern web applications</p>
+              </div>
+              <div class="skills-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color:var(--gold)">
+                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                </svg>
+                <span>10+ Technologies</span>
+              </div>
+            </div>
+            <div class="skills-wrap stagger">
+              <span class="tag tag-shine" data-skill="JavaScript"><span class="tag-icon">⚡</span>JavaScript</span>
+              <span class="tag tag-shine" data-skill="React"><span class="tag-icon">⚛️</span>React/Next.js</span>
+              <span class="tag tag-shine" data-skill="Node.js"><span class="tag-icon">🟢</span>Node.js/Express</span>
+              <span class="tag tag-shine" data-skill="Python"><span class="tag-icon">🐍</span>Python</span>
+              <span class="tag tag-shine" data-skill="PostgreSQL"><span class="tag-icon">🐘</span>PostgreSQL</span>
+              <span class="tag tag-shine" data-skill="MongoDB"><span class="tag-icon">🍃</span>MongoDB</span>
+              <span class="tag tag-shine" data-skill="TypeScript"><span class="tag-icon">💎</span>TypeScript</span>
+              <span class="tag tag-shine" data-skill="AWS"><span class="tag-icon">☁️</span>AWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-header reveal" style="text-align:center;margin-bottom:64px">
+        <span class="eyebrow">MY PROJECTS</span>
+        <h2 class="section-title">Selected Works</h2>
+        <div class="title-underline" style="margin:12px auto 0"></div>
+        <p class="section-subtitle">A showcase of my recent projects and achievements</p>
+      </div>
+      
+      <!-- Project filter tabs -->
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="saas">SaaS / AI</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+      </div>
+      
+      <div class="projects-grid">
+        <article class="project-card reveal" data-category="saas fullstack">
+          <div class="project-badge">Featured</div>
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Voice Latex AI" loading="lazy">
+            <div class="hover-overlay">
+              <div class="overlay-content">
+                <a href="#" class="btn btn-outline btn-white">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  <span>Live Demo</span>
+                </a>
+                <a href="#" class="btn btn-outline btn-white">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <span class="project-type">AI SaaS</span>
+            </div>
+            <h3>Voice Latex AI</h3>
+            <p>An AI-powered SaaS platform automating customer interactions via intelligent chatbots & voice assistants with LLM integrations.</p>
+            <div class="skills-wrap">
+              <span class="tag">React</span>
+              <span class="tag">Python</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">AWS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web fullstack">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Deem Properties" loading="lazy">
+            <div class="hover-overlay">
+              <div class="overlay-content">
+                <a href="#" class="btn btn-outline btn-white">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  <span>View Project</span>
+                </a>
+                <a href="#" class="btn btn-outline btn-white">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-year">2026</span>
+              <span class="project-type">Full Stack</span>
+            </div>
+            <h3>Deem Properties</h3>
+            <p>A full stack real estate platform with property search, dynamic listings, and optimized UI using lazy loading.</p>
+            <div class="skills-wrap">
+              <span class="tag">Next.js</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">TypeScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web fullstack">
+          <div class="project-badge" style="background:var(--gold)">New</div>
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="FinTech App PWA" loading="lazy">
+            <div class="hover-overlay">
+              <div class="overlay-content">
+                <a href="#" class="btn btn-outline btn-white">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  <span>View Project</span>
+                </a>
+                <a href="#" class="btn btn-outline btn-white">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <span class="project-type">PWA</span>
+            </div>
+            <h3>FinTech App PWA</h3>
+            <p>Progressive web app for personal finance. Features offline capability, secure authentication, and real-time data sync.</p>
+            <div class="skills-wrap">
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Tailwind</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="fullstack web">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Booking Platform" loading="lazy">
+            <div class="hover-overlay">
+              <div class="overlay-content">
+                <a href="#" class="btn btn-outline btn-white">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  <span>View Project</span>
+                </a>
+                <a href="#" class="btn btn-outline btn-white">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-year">2023</span>
+              <span class="project-type">SaaS</span>
+            </div>
+            <h3>Booking Platform</h3>
+            <p>A robust reservation system featuring Stripe integration and interactive availability calendars. Handles 1000+ bookings daily.</p>
+            <div class="skills-wrap">
+              <span class="tag">Next.js</span>
+              <span class="tag">Stripe</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-header reveal">
+        <span class="eyebrow">GET IN TOUCH</span>
+        <h2 class="section-title">Let's Create Something Amazing</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">Have a project in mind? Let's discuss how I can help bring your ideas to life</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-intro">
+            <p>Whether you're looking to build a new product, improve an existing platform, or need a reliable developer for your team, I'm here to help.</p>
+          </div>
+          
+          <ul class="contact-list">
+            <li class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 6l9 6 9-6"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:himanshuchhabra4321@gmail.com">himanshuchhabra4321@gmail.com</a></p>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+918307976963">+91 83079 76963</a></p>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Location</strong>
+                <p>Loharu, Haryana 127201</p>
+              </div>
+            </li>
+          </ul>
+          
+          <div class="social-links-enhanced">
+            <a href="https://linkedin.com/in/himanshu-chhabra5" target="_blank" class="social-link" aria-label="LinkedIn" data-tooltip="Connect on LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com/himanshuchhabran" target="_blank" class="social-link" aria-label="GitHub" data-tooltip="View my work">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter" data-tooltip="Follow on Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="CodePen" data-tooltip="See demos">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/><polyline points="12 22 12 15.5 22 8.5"/><polyline points="2 8.5 12 15.5 12 22"/><polyline points="2 15.5 12 8.5 22 15.5"/><polyline points="12 2 12 8.5"/></svg>
+            </a>
+          </div>
+          
+          <div class="availability-badge">
+            <span class="availability-dot"></span>
+            <span>Available for freelance work</span>
+          </div>
+        </div>
+        
+        <div class="contact-form-wrap reveal">
+          <div class="card form-card">
+            <form id="contact-form" autocomplete="off">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-input" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-input" required placeholder="john@example.com">
+              </div>
+              <div class="form-group">
+                <label for="service">How can I help?</label>
+                <select id="service" name="service" class="form-input form-select" required>
+                  <option value="" disabled selected>Select a service...</option>
+                  <option value="frontend">Frontend Development</option>
+                  <option value="backend">Backend Architecture</option>
+                  <option value="wordpress">WordPress Solution</option>
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="form-input form-textarea" rows="4" required placeholder="Tell me about your project..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-gold" style="width:100%;margin-top:10px">Send Message</button>
+              <p class="form-disclaimer">Your details stay private. No spam &mdash; ever.</p>
+              <div id="form-feedback" class="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Himanshu Chhabra</span>
+        <p class="footer-tagline">Building the web, one project at a time.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.html" target="_blank">Resume</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/himanshu-chhabra5" target="_blank" aria-label="LinkedIn" class="footer-social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/himanshuchhabran" target="_blank" aria-label="GitHub" class="footer-social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter / X" class="footer-social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="footer-year"></span> Himanshu Chhabra. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
